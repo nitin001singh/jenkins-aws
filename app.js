@@ -17,6 +17,10 @@ app.get('/contact', (req, res) => {
 app.get('/privacy', (req, res) => {
   res.send('This is privacy page')
 })
+
+app.get('/terms', (req, res) => {
+  res.send('This is terms page')
+})
  
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
