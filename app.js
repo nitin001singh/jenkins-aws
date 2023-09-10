@@ -7,12 +7,16 @@ app.get('/', (req, res) => {
 }) 
 
 app.get('/aboutus', (req, res) => {
-    res.send('This is about us project')
+    res.send('This is about us page')
   }) 
 
-  app.get('/contact', (req, res) => {
-    res.send('This is contact us project')
-  })
+app.get('/contact', (req, res) => {
+  res.send('This is contact us page')
+})
+
+app.get('/privacy', (req, res) => {
+  res.send('This is privacy page')
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
